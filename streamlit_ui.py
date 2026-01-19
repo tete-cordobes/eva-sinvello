@@ -116,7 +116,7 @@ def run_chat_interface():
     image_path = Path("sinvello_logo.png")
     if image_path.exists():
         st.markdown('<div class="logo-container">', unsafe_allow_html=True)
-        st.image(str(image_path), use_column_width=True)
+        st.image(str(image_path), use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
     else:
         st.error(f"No se pudo encontrar la imagen en: {image_path}")
